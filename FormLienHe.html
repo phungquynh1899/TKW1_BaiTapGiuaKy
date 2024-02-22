@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/FormLienHe.css">
+    <title>Form Liên Hệ</title>
+</head>
+<body>
+    <!-- Cùng nội dung thì đưa vào 1 div -->
+    <!-- Muốn 2 ô luôn nằm ngang thì cho vào div: flex -->
+    <header>
+        <a href="" class="logo">Quỳnh<span>'s hoa</span></a>
+        
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Hoa sự kiện</a>
+                    <ul>
+                        <li><a href="#">sinh nhật</a></li>
+                        <li><a href="#">khai trương</a></li>
+                        <li><a href="#">sự kiện</a>
+                            <ul>
+                                <li><a href="#">hoa cưới</a></li>
+                                <li><a href="#">hoa 14-2</a></li>
+                                <li><a href="#">hoa 8-3</a></li>
+                                <li><a href="#">hoa 20-10</a></li>
+                                <li><a href="#">hoa 20-11</a></li>
+                                <li><a href="#">hoa tốt nghiệp</a></li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/GioiThieu.html">Về chúng tôi</a>
+                    <ul>
+                        <li><a href="#">giới thiệu</a></li>
+                        <li><a href="#">khách hàng nhận xét</a></li>
+                    </ul>
+                </li>
+                <li><a href="FormLienHe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Thông tin khách hàng</h3>
+
+                    <div class="inputBox">
+                        <span>Họ tên khách hàng</span>
+                        <input type="text" placeholder="Nguyễn Văn A">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Số điện thoại:</span>
+                        <input type="text" placeholder="123-456-7890">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="text" placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Địa chỉ giao hàng: </span>
+                        <input type="text" placeholder="123 Đồng Khởi">
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Thành phố: </span>
+                            <input type="text" placeholder="Hồ Chí Minh">
+                        </div>
+
+                        <div class="inputBox">
+                            <Span>quốc gia: </Span>
+                            <input type="text" placeholder="Việt Nam">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Phương thức thanh toán</h3>
+
+                    <div class="inputBox">
+                        <span>loại thẻ: </span>
+                        <img src="./img/card_accepted.png" alt="">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>tên: </span>
+                        <input type="text" placeholder="Nguyễn Văn A">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>số thẻ: </span>
+                        <input type="text" placeholder="123-456-7890">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>exp month: </span>
+                        <input type="text" placeholder="08">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year: </span>
+                            <input type="text" placeholder="2024">
+                        </div>
+
+                        <div class="inputBox">
+                            <Span>CVV: </Span>
+                            <input type="text" placeholder="40000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Xác nhận" class="submit-btn">
+        </form>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>điều hướng</h3>
+                <a href="#">Trang chủ</a>
+                <a href="#">Hoa sự kiện</a>
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+            </div>
+
+            <div class="box">
+                <h3>Về tôi</h3>
+                <a href="#">Tài khoản của tôi</a>
+                <a href="#">Đơn hàng của tôi</a>
+                <a href="#">Mặt hàng yêu thích</a>
+                <a href="#">Thông tin cá nhân</a>
+            </div>
+
+            <div class="box">
+                <h3>chi nhánh</h3>
+                <a href="#">Quận 1</a>
+                <a href="#">Quận 3</a>
+                <a href="#">Quận 10</a>
+                <a href="#">Quận Bình Tân</a>
+            </div>
+
+            <div class="box">
+                <h3>thông tin liên hệ</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">Bình Tân, TP.HCM</a>
+                <img src="./img/payment.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="credit">created by <span> Nguyễn Trương Phụng Quỳnh</span></div>
+    </section>
+</body>
+</html>
