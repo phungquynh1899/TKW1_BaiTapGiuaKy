@@ -139,7 +139,7 @@ section{
     display: flex;
     align-items: center;
     height: 60vh;
-    background: url(landing.jpg) no-repeat;
+    background: url(/landing.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
