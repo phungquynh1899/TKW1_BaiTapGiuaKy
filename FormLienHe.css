@@ -1,0 +1,244 @@
+:root{
+    --pink: #e84393;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body{
+    padding-top: 25px;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 30px;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar ul{
+    list-style-type: none;
+
+}
+header .navbar ul li{
+    float: left;
+    position: relative;
+    width: 120px;
+    background-color: #fff;
+}
+header .navbar ul li a{
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header .navbar ul li a:hover{
+    background-color: var(--pink);
+    color: #fff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    display: none;
+    z-index: 999;
+}
+header .navbar ul li:hover>ul{
+    display: initial;
+}
+
+header .navbar ul li ul li{
+    float:none;
+}
+
+header .navbar ul li ul li a{
+    display: block;
+}
+
+header .navbar ul li ul li ul{
+    position: absolute;
+    top:0; left:7.5rem;
+    width: 150px;
+}
+
+header .navbar ul li ul li ul li{
+    width: 100%;
+}
+
+header .icons a{
+    font-size: 1rem;
+    padding: 0.25rem;
+    color: #333
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+
+section{
+    padding: 1rem 5%;
+}
+
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, var(--pink) 60%, #ff72a1 40%);
+    padding-bottom: 70px;
+
+}
+
+.container form{
+    padding: 20px;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px; 
+}
+
+.container form .row .col title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+    margin: 15px 0;
+
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 1px;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: var(--pink);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+    background: #ff72a1;
+}
+
+/*footer*/
+
+.footer{
+    background: #efefef;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 12rem;   
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-style: 0.8rem;
+    padding: 0.4rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 0.5rem;
+    width: 30%;
+    height: auto;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 0.8rem;
+    padding: 1.4rem;
+    font-size: 1rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0,0,0,0.1);
+}
+
+.footer .credit span{
+    color: var(--pink);
+    font-weight: bolder;
+}

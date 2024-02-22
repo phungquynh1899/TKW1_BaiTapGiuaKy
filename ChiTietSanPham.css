@@ -1,0 +1,336 @@
+:root{
+    --pink: #e84393;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+}
+
+body{
+    padding-top: 50px;/**/
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 30px;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar ul{
+    list-style-type: none;
+
+}
+header .navbar ul li{
+    float: left;
+    position: relative;
+    width: 120px;
+    background-color: #fff;
+}
+header .navbar ul li a{
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+    /*để navbar nở ra to bằng header*/
+    text-align: center;
+    /*padding chirnh bawng px thif khong bi anh huong boi parent la li hay ul */
+}
+
+header .navbar ul li a:hover{
+    background-color: var(--pink);
+    color: #fff;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    display: none;
+    z-index: 999;
+}
+header .navbar ul li:hover>ul{
+    display: initial;
+}
+
+header .navbar ul li ul li{
+    float:none;
+}
+
+header .navbar ul li ul li a{
+    display: block;
+}
+
+header .navbar ul li ul li ul{
+    position: absolute;
+    top:0; left:7.5rem;
+    width: 150px;
+}
+
+header .navbar ul li ul li ul li{
+    width: 100%;
+}
+
+header .icons a{
+    font-size: 1rem;
+    padding: 0.25rem;
+    color: #333
+}
+header .icons a:hover{
+    color: var(--pink);
+}
+
+/*chi tiết sản phẩm*/
+
+/*contact us*/
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.contact .row form{
+    flex: 1 1 20rem;
+    padding: 1rem 1.7rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 0.25rem;
+}
+
+.contact .row .image{
+    flex: 1 1 20rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+    height: 100%;/*chinh laji*/
+}
+
+.contact .row form .box{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #333;
+    text-transform: none;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 0.25rem;
+    margin: 0.4rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--pink);
+}
+
+/*section*/
+section{
+    padding: 1rem 5%;
+    /*chỉnh lề cho tất cả section ở phía dưới*/
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: var(--pink);
+}
+
+
+.product .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product .container .left-col{
+    width: 40%;
+}
+
+.product .container .left-col .main-img img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.product .container .left-col .mini-img{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.product .container .left-col .mini-img img{
+    width: 20%;
+    height: 20%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.product .container .left-col .mini-img img:hover{
+    cursor: pointer;
+    border: 1px solid var(--pink);
+}
+
+.product .container .right-col{
+    width: 55%;
+}
+
+.product .container .right-col h3{
+    color: #333;
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.product .container .right-col h3 span{
+    font-size: 1rem;
+    text-transform: None;
+    background-color: var(--pink);
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.product .container .right-col p{
+    color: var(--pink);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+
+.product .container .right-col p span{
+    color: #999;
+    font-size: 1rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.product .container .right-col .stars{
+    color: orange;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+.product .container .right-col .detail h3{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.product .container .right-col .detail p{
+    font-size: 1rem;
+    color: #666;
+    font-weight: lighter;
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.product .container .right-col .inputBox{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.product .container .right-col .inputBox label{
+    font-weight: bolder;
+}
+
+.product .container .right-col .inputBox select{
+    font-size: 0.8rem;
+    border: 1px solid var(--pink);
+}
+
+.product .container .right-col .inputBox #quantity{
+    font-size: 0.8rem;
+    width: 5rem;
+}
+
+.product .container .right-col .submit-btn{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    
+}
+
+.product .container .right-col .submit-btn input{
+    width: 50%; /*tự động canh giữa*/
+}
+
+/*footer*/
+
+.footer{
+    background: #efefef;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 12rem;   
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;/*để a xuống hàng*/
+    color: #666;
+    font-style: 0.8rem;
+    padding: 0.4rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 0.5rem;
+    width: 30%;
+    height: auto;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 0.8rem;
+    padding: 1.4rem;
+    font-size: 1rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0,0,0,0.1);
+}
+
+.footer .credit span{
+    color: var(--pink);
+    font-weight: bolder;
+}
